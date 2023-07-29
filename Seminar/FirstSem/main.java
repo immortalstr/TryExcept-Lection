@@ -13,14 +13,23 @@ public class main {
         int minim = 6;
         int value = 5;
         // System.out.println(array(arr, minim));
-        System.out.println(array(null, value, minim));
+        System.out.println(message(array(arr, value, minim)));
     }
 
     // public static int array(int[] mas, int min) {
     // if (mas.length < min) {
     // return -1;
     // }
-
+    public static String message(int exception) {
+        String m = switch (exception) {
+            case -1 -> "Длина массива меньше заданного минимума!";
+            case -2 -> "Искомый элемент не найден!";
+            case -3 -> "Вмсесто массива пришел null!";
+            default -> "Индекс эллемента = " + exception;
+        };
+        return m;
+    }
+    
     public static int array(int[] mas, int value, int min) {
         if (mas == null)
             return -3;
