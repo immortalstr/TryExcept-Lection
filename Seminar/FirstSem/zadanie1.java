@@ -6,12 +6,12 @@ package Seminar.FirstSem;
 /**
  * main
  */
-public class main {
+public class zadanie1 {
 
     public static void main(String[] args) {
         int[] arr = { 1, -1, 5, 6, 17, 27 };
         int minim = 6;
-        int value = 5;
+        int value = 2;
         // System.out.println(array(arr, minim));
         System.out.println(message(array(arr, value, minim)));
     }
@@ -29,7 +29,7 @@ public class main {
         };
         return m;
     }
-    
+
     public static int array(int[] mas, int value, int min) {
         if (mas == null)
             return -3;
