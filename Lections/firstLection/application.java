@@ -1,4 +1,4 @@
-package firstLection;
+package Lections.firstLection;
 
 import java.io.File;
 
