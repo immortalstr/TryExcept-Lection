@@ -9,8 +9,14 @@ public class zadanie3 {
     public static void main(String[] args) {
 
         int[][] massive = {{1,0,1,0,1},{0,1,0,1,1},{1,0,1,2,0},{1,0,1,0,0},{1,0,1,0,0}};
+        try{
+            System.out.println(sumArray(massive)); 
+        }
+        catch (RuntimeException e){
+            System.out.println(e.getMessage());
 
-        System.out.println(sumArray(massive));
+        }
+        
 
     }
 
@@ -19,10 +25,10 @@ public class zadanie3 {
             throw new RuntimeException("Массив не квадратный " + mass.length + " " + mass[0].length);
         }
         int sum = 0;
-        for (int i =0; i < mass.length; i++){
+        for (int i =0; i < mass.length; i++){ 
             for (int j = 0; j < mass[0].length; j++){
                 if (mass[i][j] != 0 && mass[i][j]!= 1){
-                    throw new RuntimeException("Некорректное значение: " + mass[i][j]);
+                    throw new RuntimeException("Некорректное значение: " + mass[i][j] + " Индекс: " + i + ":" + j);
                 }
                 sum += mass[i][j];
 
