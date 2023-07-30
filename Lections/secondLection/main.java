@@ -6,7 +6,7 @@ public static void main(String[] args) {
     
     try {
         throw new RuntimeException("Hello");
-    } catch (Exception e){ System.out.println("Hello!");
+    } catch (IndexOutOfBoundsException e){ System.out.println("Hello!");
     }finally{
 
         System.out.println("God day!");
