@@ -40,7 +40,7 @@ public class zadanie1 {
     }
 
     public static boolean isNumber(String val) {
-
+        // полезный метод
         try {
             Integer.parseInt(val);
             return true;
