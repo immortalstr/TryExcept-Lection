@@ -67,7 +67,7 @@ public class zadanie1 {
     }
 
     public static void main(String[] args) {
-        File file = new File("/Users/mac/TryExept/Lections/secondLection/names.txt");
+        File file = new File("Seminar/SecondSem/names.txt");
         List<String[]> lst = readfile(file);
         replaceChar(lst);
         writeFile(lst, file);
