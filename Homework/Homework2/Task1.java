@@ -26,7 +26,7 @@ public class Task1 {
             Float.parseFloat(val);
             return true;
         } catch (NumberFormatException e) {
-            System.out.println("Вы ввели некорректное значение!!!");
+            System.out.println("ERROR: " + "Вы ввели некорректное значение!!!");
 
             return false;
         }
