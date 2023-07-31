@@ -20,7 +20,7 @@ public class Task3 {
         } catch (ArithmeticException e) {
             System.out.println("Division by zero");
         }
-        
+
     }
 
     public static void printSum(Integer a, Integer b) throws FileNotFoundException {
