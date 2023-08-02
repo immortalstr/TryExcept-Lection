@@ -2,16 +2,16 @@ package Lections.thirdLection;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Task3 {
-    public static void main(String[] args){
+    public static void main(String[] args) throws FileNotFound{
         String path = "asd.txt";
 
-        try{
+        try(FileReader fr = new FileReader(path)){
+            int i = 0;
 
-            FileReader fr = new FileReader(path);
-
-        }catch(FileNotFoundException e){
+        }catch(IOException e){
             throw new FileNotFound(path);
         }
 
